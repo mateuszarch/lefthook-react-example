@@ -3,8 +3,6 @@ pre-commit:
     lint:
       glob: "*.{js,ts,jsx,tsx}"
       run: npx eslint
-pre-push:
-  parallel: true
-  commands:
-    test:
-      run: test
+# pre-push:
+#   parallel: true
+#   commands:
