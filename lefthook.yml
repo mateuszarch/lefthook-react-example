@@ -1,0 +1,10 @@
+pre-commit:
+  commands:
+    lint:
+      glob: "*.{js,ts,jsx,tsx}"
+      run: npx eslint
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: test
