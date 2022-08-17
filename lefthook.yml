@@ -1,8 +1,12 @@
 pre-commit:
   commands:
-    lint:
+    eslint:
       glob: "*.{js,ts,jsx,tsx}"
-      run: npx eslint
-# pre-push:
-#   parallel: true
-#   commands:
+      run: npm run lint -- --max-warnings 0
+    prettier:
+      run: npx prettier --check .
+pre-push:
+  parallel: true
+  commands:
+    test:
+      run: npm run test -- --watchAll=false

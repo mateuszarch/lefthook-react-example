@@ -1,11 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  // const a = ""; // triggers an eslint warning which fails the commit hook
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={logo} className="App-logo" alt="A logo." />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
